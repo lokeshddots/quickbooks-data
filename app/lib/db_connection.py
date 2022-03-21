@@ -1,6 +1,8 @@
+import pdb
 import sqlalchemy
 from sqlalchemy.engine.mock import MockConnection
 
 import config
 
-db_engine: MockConnection = sqlalchemy.create_engine(url=config.DATABASE_URL)
+# pdb.set_trace()
+db_engine: MockConnection = sqlalchemy.create_engine("mysql+mysqldb://root@localhost/link_unfurling", pool_pre_ping=True)

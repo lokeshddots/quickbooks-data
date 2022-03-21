@@ -2,6 +2,7 @@ import pandas as pd
 
 from app.helpers.quickbooks import QuickBooksTable
 from app.lib.db_connection import db_engine
+from app.models import business
 from app.utils.prints import print_to_terminal
 
 
